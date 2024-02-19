@@ -816,6 +816,10 @@ img {
     padding: 0 16px;
   }
 
+  .team > .container{
+    width: 584px;
+  }
+
   .team-list {
     display: flex;
     column-gap: 24px;

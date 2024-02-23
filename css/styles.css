@@ -113,7 +113,7 @@ img {
   flex-direction: column;
 }
 
-.menu-is-open{
+.menu-is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -174,6 +174,11 @@ img {
 
 .mob-menu-link:hover,
 .mob-menu-link:focus {
+  color: #404bbf;
+}
+
+.current-mob {
+  position: relative;
   color: #404bbf;
 }
 
@@ -352,6 +357,7 @@ img {
 
 .features-text {
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -371,7 +377,7 @@ img {
 }
 
 .team-list {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -585,11 +591,14 @@ img {
   text-align: center;
 }
 
+.footer-soc {
+  margin-bottom: 72px;
+}
+
 .footer-container-list {
   display: flex;
   justify-content: center;
   gap: 16px;
-  margin-bottom: 72px;
 }
 
 .footer-container-item {
@@ -631,8 +640,12 @@ img {
   text-align: center;
 }
 
+.footer-label {
+  margin-bottom: 16px;
+}
+
 .footer-input {
-  width: 264px;
+  width: 288px;
   height: 40px;
   border-radius: 4px;
   border: 1px solid #fff;
@@ -643,7 +656,6 @@ img {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding: 8px 16px;
   background-color: transparent;
-  margin-bottom: 16px;
 }
 
 .footer-input::placeholder {
@@ -1070,6 +1082,7 @@ img {
 
   .footer-container-logo {
     margin-right: 24px;
+    margin-bottom: 0;
   }
 
   .logo-container {
@@ -1088,9 +1101,17 @@ img {
     text-align: start;
   }
 
+  .footer-label {
+    margin-bottom: 0;
+  }
+
   .footer-form {
     display: flex;
     gap: 24px;
+  }
+
+  .footer-input {
+    width: 264px;
   }
 
   /*----------backdrop------------*/
@@ -1188,6 +1209,9 @@ img {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
+  }
+  .features-text {
+    font-weight: 400;
   }
 
   /*-----------team--------------*/
